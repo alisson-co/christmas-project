@@ -59,3 +59,157 @@
     padding: 0;
     margin: 0;
 }
+
+body,
+button,
+input{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body{
+    margin: var(--header-height) 0 0 0;
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.container{
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+}
+
+.main{
+    overflow: hidden;
+}
+
+.section{
+    padding: 4.5rem 0 1rem;
+}
+
+.section-title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2-5);
+    text-align: center;
+}
+
+/* Header */
+.header{
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .4s;
+}
+
+/* Nav */
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo,
+.nav-close,
+.nav-toggle{
+    color: var(--title-color);
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    column-gap: .25rem;
+    font-weight: var(--font-medium);
+}
+
+.nav-logo-img{
+    width: 1.5rem;
+}
+
+.nav-toggle{
+    display: inline-flex;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 767px){
+    .nav-menu{
+        position: fixed;
+        background-color: var(--body-color);
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 4rem 0;
+        border-radius: 0 0 1.5rem 1.5rem;
+        box-shadow: 0 1px 4px hsl(0, 4%, 15% / 10%);
+        transition: .4s;
+    }
+}
+
+.nav-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(-15deg);
+  }
+  
+  .nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+  
+  .nav-link{
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    transition: .3s;
+  }
+  
+  .nav-link:hover{
+    color: var(--first-color);
+  }
+  
+  .nav-close{
+    font-family: 2rem;
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .show-menu{
+      top: 0;
+  }
