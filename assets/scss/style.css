@@ -180,8 +180,8 @@ button {
     width: 100%;
     padding: 4rem 0;
     border-radius: 0 0 1.5rem 1.5rem;
-    -webkit-box-shadow: 0 1px 4px #040404;
-            box-shadow: 0 1px 4px #040404;
+    -webkit-box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+            box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -304,6 +304,85 @@ button {
 }
 
 .giving-img:hover {
+  -webkit-transform: translateY(-0.25rem);
+          transform: translateY(-0.25rem);
+}
+
+/* Change background header */
+.scroll-header {
+  -webkit-box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+          box-shadow: 0 1px 4px rgba(40, 37, 37, 0.1);
+}
+
+/* Celebrate */
+.celebrate-container {
+  row-gap: 1rem;
+}
+
+.celebrate-data {
+  text-align: center;
+}
+
+.celebrate-title {
+  margin-bottom: var(--mb-1-5);
+}
+
+.celebrate-description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.celebrate-img {
+  width: 280px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+/* Gift */
+.gift-container {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.gift-card {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  background-color: var(--container-color);
+  -webkit-box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
+          box-shadow: 0 4px 16px rgba(48, 29, 30, 0.1);
+  padding: 1.5rem 1rem 1rem;
+  border-radius: .75rem;
+}
+
+.gift-img {
+  width: 100px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-bottom: var(--mb-0-25);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.gift-icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.gift-price {
+  font-size: var(--h3-font-size);
+}
+
+.gift-title {
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-medium);
+}
+
+.gift-card:hover .gift-img {
   -webkit-transform: translateY(-0.25rem);
           transform: translateY(-0.25rem);
 }
