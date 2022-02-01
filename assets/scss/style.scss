@@ -358,7 +358,7 @@ button{
 /* New */
 .new-card{
     position: relative;
-    width: 230px;
+    width: 230px !important;
     background-color: var(--container-color);
     box-shadow: 0 4px 16px hsla(355, 25%, 15%, .1);
     padding: 1rem 1rem 1.5rem;
@@ -418,4 +418,47 @@ button{
 
 .swiper-pagination-bullet-active{
     background-color: var(--first-color);
+}
+
+/* Message */
+.message-container{
+    row-gap: 3rem;
+    background-color: var(--first-color);
+    padding: 2.5rem 1.5rem 2.5rem;
+    border-radius: 1.25rem;
+}
+
+.message-form{
+    text-align: center;
+}
+
+.message-title{
+    color: #fff;
+    margin-bottom: var(--mb-1-5);
+}
+
+.message-input{
+    width: 100%;
+    background: #fff;
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    margin-bottom: var(--mb-1);
+}
+
+.message-button{
+    background-color: var(--title-color);
+    width: 100%;
+}
+
+.message-button:hover{
+    background-color: var(--title-color);
+}
+
+.message-img{
+    width: 200px;
+    justify-self: center;
+    transform: rotate(15deg);
 }
