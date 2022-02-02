@@ -501,4 +501,127 @@ button {
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
 }
+
+/* Footer */
+.footer {
+  overflow: hidden;
+}
+
+.footer-container {
+  position: relative;
+  row-gap: 2rem;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: .25rem;
+          column-gap: .25rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.footer-logo-img {
+  width: 1.5rem;
+}
+
+.footer-description {
+  font-size: var(--small-font-size);
+}
+
+.footer-logo,
+.footer-title {
+  margin-bottom: var(--mb-1);
+}
+
+.footer-title {
+  font-size: var(--h3-font-size);
+}
+
+.footer-links,
+.footer-aviables {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: .75rem;
+}
+
+.footer-link {
+  color: var(--text-color);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer-link:hover {
+  color: var(--title-color);
+}
+
+.footer-aviable-img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer-copy {
+  display: block;
+  margin: 3.5rem 0 1rem 0;
+  text-align: center;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.footer-img1,
+.footer-img2 {
+  position: absolute !important;
+  width: 100px;
+}
+
+.footer-img1 {
+  top: 25%;
+  right: 2rem;
+}
+
+.footer-img2 {
+  top: 75%;
+  right: -4rem;
+}
+
+/* Active link */
+.active-link {
+  color: var(--first-color);
+}
+
+/* Scroll Up */
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--container-color);
+  -webkit-box-shadow: 0 4px 12px rgba(51, 51, 51, 0.1);
+          box-shadow: 0 4px 12px rgba(51, 51, 51, 0.1);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: .35rem;
+  border-radius: var(--z-tooltip);
+  opacity: .8;
+  -webkit-transition: .4;
+  transition: .4;
+}
+
+.scrollup-icon {
+  font-size: 1.25rem;
+  color: var(--first-color);
+}
+
+.scrollup:hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
