@@ -1,23 +1,23 @@
-# Projetc Mobile-First
+# Christmas Project 🎅
 
-## About:
+Christmas is a landing page project built through a YouTube lesson. The user can navigate through the site and interact with it.
 
-Christmas-themed page developed from a video.
+O Christmas é um projeto de landing page construído através de uma aula no YouTube. O usuário pode navegar pelo site e realizar interações.
 
-Página com temática natalina desenvolvida a partir de um vídeo.
+### Cloning
+
+- Go to the folder you want to clone the repository
+- Enter the command ```git clone https://github.com/alisson-co/christmas-project.git```
+- And open the file **index.html** in your browser
+
+### Used Technoligies
+- HTML
+- JavaScript
+- SASS
+
+![preview img](https://github.com/alisson-co/christmas-project/blob/master/assets/img/christmas.jpg)
 
 
-##### Link:
-[Tutorial](https://www.youtube.com/watch?v=HrZSQpxfIxw&t=2934s&ab_channel=Bedimcode)
 
-
-
-## Layout web
-
-![Project](https://github.com/alisson-co/Project-Mobile-First/blob/master/assets/img/project-img.png?raw=true)
-
-
-## Used Technologies
--Javascript
--CSS
--HTML
+#### Link to Youtube class
+[Bedimcode](https://www.youtube.com/watch?v=HrZSQpxfIxw&t=2939s&ab_channel=Bedimcode)
